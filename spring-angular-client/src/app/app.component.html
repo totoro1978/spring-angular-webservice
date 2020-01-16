@@ -1,0 +1,25 @@
+<div style="text-align:center"class="container">
+  <h1>
+    Welcome {{title}}!
+  </h1>
+  <div class="container">
+  	<table>
+  		<thead>
+  			<th>Post #</th>
+  			<th>Title</th>
+  			<th>Author</th>
+  			<th>Content</th>
+  			<th>Modified Date</th>
+  		</thead>
+  		<tbody>
+  			<tr *ngFor="let post of posts">
+  				<td>{{post.id}}</td>
+  				<td>{{post.title}}</td>
+  				<td>{{post.author}}</td>
+  				<td>{{post.content}}</td>
+  				<td>{{post.modifiedDate}}</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
